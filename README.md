@@ -1,39 +1,52 @@
-# Exemplo de Design de Arquitetura
-
-![exemplo_arq.jpg](https://github.com/kterra/Inteli-2024-1B/blob/main/materiais/ponderada-2/exemplo-arq-v2.jpg)
-
-Link de download Draw.io: (https://drive.google.com/file/d/1hQliuMZirU0yiKzAr0d_5koE5qVwEQ2K/view?usp=sharing) 
 
 # Template Readme para Arquitetura MVC em Markdown
-- Nome do Projeto: [Insira o nome do seu projeto]
-- Descrição: [Insira uma breve descrição do seu projeto]
-- Arquitetura: MVC (Model-View-Controller)
-- Ferramenta de Diagramação: [Insira a ferramenta de diagramação utilizada, ex: draw.io]
+- Nome do Projeto: MVC-WEB CULTURE;
+- Descrição: MVC para organizar e planejar site que tem como princípio organizar ;feedback entre alunos e professores no jogo "Cesim Game";
+- Arquitetura: MVC (Model-View-Controller);
+- Ferramenta de Diagramação: draw.io;
 
 ### Modelos (Models):
-- Descreva as entidades do seu projeto e seus atributos.
-- Explique as relações entre as entidades.
+-   Usuário: O usuário interage com a aplicação através do cliente;
+
+    Cliente: Representado pelo ícone do navegador, é a interface pela qual o usuário interage com a aplicação;
+
+- Users estarão ultilizando os produtos;
 
 ### Controladores (Controllers):
-- Liste os controladores do seu projeto e suas responsabilidades.
-- Descreva as ações (methods) de cada controlador e seus parâmetros de entrada e saída.
-- Explique como os controladores interagem com os modelos e views.
+-   USUÁRIOS: Gerencia operações LADP (Listar, atualizar, deletar, procurar) para usuários;
+
+    PRODUTOS: Gerencia operações LADP (Listar, atualizar, deletar, procurar) para proutos;
+
+- LADP:
+Listar- fornece e mostra infos.
+atualizar- atualiza infos.
+deletar- apaga infos armazenadas.
+procurar- encontrar informações.
+
+- Controlador: Recebe e interpreta as entradas do usuário, solicitando informações ao modelo ou instruindo a view a se atualizar.
+
+Modelo: Fornece dados ao controlador e reage às instruções do controlador para alterar esses dados.
+
+Visão: Exibe os dados ao usuário e muda sua apresentação conforme instruído pelo controlador, baseando-se nas informações fornecidas pelo modelo.
 
 ### Views (Views):
-- Liste as views do seu projeto e sua função.
+- Home: Inclui componentes como a barra de navegação e membros do grupo.
+
+Login: Local onde o usuário vai poder "imputar" suas informaçoes no navbar, tendo um dropdown que leva pro resto do site.
+
+Feedback: Contém elementos para questões, envio e visualização de feedbacks.
 
 ### Infraestrutura:
 
-- Descreva os componentes de infraestrutura do seu projeto, como bancos de dados, APIs externas e outras dependências.
-- Explique como a infraestrutura se integra à arquitetura MVC.
+- PostgreSQL: Sistema de gerenciamento de banco de dados onde as informações dos modelos são armazenadas e gerenciadas.
+
+- No MVC, o modelo é responsável pela lógica de dados, que inclui armazenar, recuperar, e manipular informações do banco de dados. PostgreSQL, sendo um SGBD robusto e altamente confiável, gerencia esses dados.
 
 
 ### Justifique as escolhas feitas e como elas impactam o projeto.
 #### Implicações da Arquitetura:
 Descreva as implicações da arquitetura em termos de escalabilidade, manutenção, testabilidade e outros aspectos importantes.
 
-### Recursos Adicionais:
-- Documentação do Sails.js: https://github.com/balderdashy/sails
-- Tutorial do draw.io: https://m.youtube.com/watch?v=w3zm-wbmlpc
-- Exemplos de diagramas MVC: https://www.lucidchart.com/pages/templates
+É uma arquitetura relativamente simples e já q somos desenvovolvedores iniciantes isso é extremamente positivo. A manutenção está em meio a propria arquitetura já que é um sistema baseado no imput/output de dados. A testabilidade é positivamente facil, pois por não ser um sistema complexo temos acesso com facilidade ao erros que podem eventualmente ocorrer
+
 
