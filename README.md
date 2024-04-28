@@ -50,3 +50,6 @@ Descreva as implicações da arquitetura em termos de escalabilidade, manutenç�
 É uma arquitetura relativamente simples e já q somos desenvovolvedores iniciantes isso é extremamente positivo. A manutenção está em meio a propria arquitetura já que é um sistema baseado no imput/output de dados. A testabilidade é positivamente facil, pois por não ser um sistema complexo temos acesso com facilidade ao erros que podem eventualmente ocorrer
 
 
+
+LINK PARA MVC: https://drive.google.com/file/d/1mhXnL0uIZYyEr6--s9ElICQrScqhrOFN/view?usp=sharing
+
